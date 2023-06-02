@@ -12,7 +12,7 @@ pipeline {
                         expression { return params.RUN_INTEGRATION_TESTS }
                     }
                     steps {
-                        h './mvnw test -D testGroups=integration'
+                        sh './mvnw test -D testGroups=integration'
                     }
                 }
             }
